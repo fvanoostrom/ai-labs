@@ -6,7 +6,6 @@ This lab covers classifying images
 ## Task 1 - Setting up the Custom Vision environment
 
 
-
 ## Task 2 - Preparing the images
 
 
