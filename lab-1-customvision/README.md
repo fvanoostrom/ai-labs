@@ -10,12 +10,16 @@ A Classification is a supervised learning problem. This means that we provide a 
 ## Task 1 - Setting up the Custom Vision environment
 Go to portal.azure.com and click on Create Resource.
 
- ![Azure Portal](./images/azureportal.png)
+ ![Azure Portal](./images/Lab01A_azureportal.png)
 
- Type in the searchbox 'Custom Vision' and hit enter.
+ Type in the searchbox 'Custom Vision' and hit enter. 
+ Select 'Custom Vision' and hit 'create'
+ 
+ ![Azure Portal](./images/Lab01B_create_customvision.png)
+
 
 ## Task 2 - Preparing the images
-
+Download the files from github
 
 ## Task 3 - Creating the model in Custom Vision
 
@@ -24,3 +28,6 @@ Go to portal.azure.com and click on Create Resource.
 
 
 ## Task 5 - Deleting the resources
+
+More information about custom vision can be found here:
+https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/#overview
