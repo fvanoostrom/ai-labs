@@ -1,5 +1,5 @@
 
-# Lab 1 - Azure Custom Vision
+# Lab 1 - Classifying images using Azure Custom Vision
 
 ## Introduction
 
@@ -17,6 +17,21 @@ Go to portal.azure.com and click on Create Resource.
  
  ![Azure Portal](./images/Lab01B_create_customvision.png)
 
+Now you are able to configure the resource.
+First of all you have to select a subscription and resource group. You can select a resource group you previously created, or create a new one.
+
+For the region select 'West Europe'. For the name follow the naming convention. I named my custom vision 'dv-we-MY_OWN_INITIALS-ailabs'.
+
+Select the Free pricing tiers.
+
+Click Review + create, and if the validation was passed, click 'Create'.
+
+
+ ![Azure Portal](./images/Lab01C_configure_customvision.png)
+ 
+  It will take a few minutes until the resource is created. After the resource has been created you can click on 'Go to resource group'
+
+ ![Azure Portal](./images/Lab01D_deployment.png)
 
 ## Task 2 - Preparing the images
 Download the files from github
