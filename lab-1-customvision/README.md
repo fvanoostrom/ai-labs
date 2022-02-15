@@ -34,7 +34,7 @@ Click Review + create, and if the validation was passed, click 'Create'.
  ![Azure Portal](./images/Lab01D_deployment.png)
 
 ## Task 2 - Preparing the images
-Download the files from github
+Download the files from [here](files/fruit-images-for-object-detection.zip) or the original [dataset on kaggle](https://www.kaggle.com/mbkinaci/fruit-images-for-object-detection)
 
 ## Task 3 - Creating the model in Custom Vision
 
