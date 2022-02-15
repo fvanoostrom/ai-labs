@@ -40,11 +40,32 @@ Afterwards unzip the images to a location on your device.
 
 ## Step 3 - Creating the model in Custom Vision
 
- The custom vision resource should be created by now. You can click the link to the resource group from step 1. Afterwards click on the name in the resource. From here information is shown that can help you make use of this service. You can either use this service in multiple ways. One way is to use it within your python code in for example databricks or Azure Machine Learning. Another way is to use the portal of Custom Vision. Within this lab we will use the portal. You can access this portal by 
+ The custom vision resource should be created by now. You can click the link to the resource group from step 1. Afterwards click on the name in the resource. From here information is shown that can help you make use of this service. You can either use this service in multiple ways. One way is to use it within your python code in for example databricks or Azure Machine Learning. Another way is to use the portal of Custom Vision. Within this lab we will use the portal. You can access this portal by clicking on 'Custom Vision Portal' within the resource:
   ![Lab01E_access_CustomVision](./images/Lab01E_access_CustomVision.png)
  
  
  You can also access it directly by going to the [customvision-portal](https://www.customvision.ai/)  and sign in.
+
+ You will now have an overview of all the projects. There should be none currently. Within the free version you are only allowed to create two projects.
+
+ Start your first project by selecting New Project. Give your project a name. Make sure Classification is selected and the custom vision resource you just created is displayed under 'Resource'. Select 'Multiclass' as classification type. Select 'Food' as Domain. 
+ 
+ Custom Vision is pretrained on millions of images. This means that custom vision will use a model that is already trained and will train it further on the images provided by you. With relative low amount of your own training images and training effort it will be able to classify images into the categories that you have made. Custom Vision has multiple pre-trained domains. Food is an appropriate domain for our scenario.
+
+![Lab01E_access_CustomVision](./images/Lab01F_configuremodel.png)
+
+After you select 'Create Project' your project will be loaded. Currently it is empty. Start to add images for three categories of fruit: Oranges, Bananas and Apples. Upload images to 
+
+
+![Lab01G_new_project](./images/Lab01G_new_project.png)
+
+Navigate to where you have unzipped the folder in Step 2. Open the folder 'fruit-images-for-object-detection' > 'train_zip' > 'train' and select all the apples within the folder. Click on Open.
+![Lab01H_upload_images](./images/Lab01H_upload_images.png)
+
+Give them the tag 'Apple' 
+![Lab01H_upload_images](./images/Lab01I_upload_and_tag.png)
+
+Do the same for the bananas and oranges, and tag them accordingly.
 
 ## Step 4 - Testing the created model
 
