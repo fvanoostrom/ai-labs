@@ -62,24 +62,44 @@ After you select 'Create Project' your project will be loaded. Currently it is e
 Navigate to where you have unzipped the folder in Step 2. Open the folder 'fruit-images-for-object-detection' > 'train_zip' > 'train' and select all the apples within the folder. Click on Open.
 ![Lab01H_upload_images](./images/Lab01H_upload_images.png)
 
-Give them the tag 'Apple' 
+Give them the tag 'Apple', Select 'Upload xx files', and click on Done.
 ![Lab01H_upload_images](./images/Lab01I_upload_and_tag.png)
 
-Do the same for the bananas and oranges, and tag them accordingly.
+Do the same for the bananas and oranges, and tag them accordingly. Your project is now ready to start training. Select Train, and choose the option 'Quick Train'. This can take up to 10 minutes!
 
+![Lab01J_train](./images/Lab01J_train.png)
+
+After your model is finished it will show you some statistics about the model that has been created. In our case it shows 100% for precision and 97,8% for recall. You can see what these measurements mean by hovering over them with your mouse. These numbers are calculated on the training images themselves. It is always important to test the model with data not seen by the model during training.
+
+![Lab01K_metrics](./images/Lab01K_metrics.png)
 ## Step 4 - Testing the created model
 
-You can try out a few images yourself to see what custom vision thinks it sees in the image
+You can try out a few images yourself to see what custom vision thinks it sees in the image. Hit the 'Quick Test' button in the top of the portal. Navigate to where you have unzipped the folder in Step 2. This time, open the folder 'fruit-images-for-object-detection' > __'test_zip'__ > __'train'__. Select just one image of your liking.
 
+![Lab01L_QuickTest](./images/Lab01L_QuickTest.png)
 
+In this case, an image with multiple fruit types was selected. You can see the results in the bottom right.
+![Lab01M_Result_QuickTest](./images/Lab01M_Result_QuickTest.png)
 
-## Step 5 - Deleting the resources
-You can clean up the resources by going to the resource group in portal.azure.com, selecting the created resources and hitting delete.
+## Step 5 - Further steps
 
-![Delete resources](./images/Lab01Z_Delete_resources.png)
+If you want to investigate it deeper, you can read the following resources to see how you can further improve your model, or how you can create an api so you can send images to predict what is on it. Of course, you can also create a new project based on a different dataset.
+
+[getting-started-improving-your-classifier](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
+
+[use-prediction-api](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/use-prediction-api)
 
 More information about custom vision can be found here:
 
 https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/#overview
 
 https://docs.microsoft.com/en-us/azure/cognitive-services/Custom-Vision-Service/overview
+
+## Step 6 - Deleting the resources
+
+
+If you don't want to use this service anymore you can clean up the resources by going to the resource group in portal.azure.com, selecting the created resources and hitting delete.
+
+
+
+![Delete resources](./images/Lab01Z_Delete_resources.png)
